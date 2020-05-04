@@ -59,7 +59,7 @@ const placeBuyOrder = async function ({ symbol, quoteQty, price }) {
   const orderResponse = await clientAuthed.order({
     symbol: symbol,
     side: "BUY",
-    quantity: qty.toFixed(5),
+    quantity: qty.toFixed(6),
     price: price.toFixed(2),
     type: "LIMIT",
   });
